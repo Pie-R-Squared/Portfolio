@@ -68,9 +68,7 @@ Portfolio website made using HTML, CSS, JavaScript and PHP.
 
 This video shows how to navigate around the website.
 
-<figure class="video_container">
-  <iframe src="assets/portfolio_guide.mp4" frameborder="0" allowfullscreen="true"></iframe>
-</figure>
+![Video Guide](https://youtu.be/vu_qohwhtEQ)
 
 ## About Page
 
