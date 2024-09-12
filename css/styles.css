@@ -1,0 +1,61 @@
+/* CV styles */
+
+/* Heading */
+
+h6 {
+    font-family: Helvetica;
+    margin: 2px;
+}
+
+h1 {
+    color: #595959;
+}
+
+hr {
+    height: 5px;
+    background-color: #595959;
+}
+
+.address {
+    color: #808080;
+}
+
+.contact {
+    color: #8b0000;
+}
+
+/* Main content */
+
+p {
+    font-family: sans-serif;
+    color: #808080;
+}
+
+li {
+    font-family: Tahoma;
+    font-size: 15px;
+    color: #808080;
+}
+
+body {
+    margin-left: 20px;
+}
+
+/* Sections */
+
+.sections {
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    color: #595959;
+}
+
+.experience {
+    color: #8b0000;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.timeframe {
+    font-family: arial;
+    font-size: 10px;
+}

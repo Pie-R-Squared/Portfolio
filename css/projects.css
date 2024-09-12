@@ -1,0 +1,148 @@
+@import url(base.css);
+
+/* Allow for expanding/shrinking sections to accomodate content */
+section {
+    height: auto;
+}
+
+/* Styling titles of projects and main heading*/
+
+#projects, .subheading {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.subheading {
+    margin: 1rem;
+}
+
+article hr {
+    width: 40%;
+}
+
+/* Video and image styling, prevent from overflowing container */
+
+video, img {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Figure styling */
+
+figure {
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.8rem 1.2rem 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    padding: 0.2rem;
+    align-self: flex-start;
+}
+
+figcaption {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Set up grid layout for articles */
+
+article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.1fr 1fr 1fr;
+}
+
+article ul {
+    list-style-type: "✬ ";
+}
+
+/* Platformer game project section */
+
+#platformer-game {
+    grid-template-areas:
+    "game-thumbnail game-title game-title gameplay-image"
+    "game-thumbnail game-info game-info gameplay-image"
+    "game-link game-info game-info gameplay-video";
+}
+
+/* Initialise grid areas */
+
+#game-title {
+    grid-area: game-title;
+}
+
+#game-info {
+    grid-area: game-info;
+}
+
+#game-thumbnail {
+    grid-area: game-thumbnail;
+}
+
+#gameplay-image {
+    grid-area: gameplay-image;
+}
+
+#gameplay-video {
+    grid-area: gameplay-video;
+}
+
+#game-link {
+    grid-area: game-link;
+}
+
+#game-link a {
+    display: block;
+    text-align: center;
+    border: solid #B3CBE4 0.1rem;
+    margin: 2.5rem;
+    padding: 1rem;
+    align-self: center;
+}
+
+/* GameGuardian script project section */
+
+#gg-script {
+    grid-template-areas:
+    "code-thumbnail gg-title gg-title gg-menu"
+    "code-thumbnail scripts-info scripts-info gg-menu"
+    "code-thumbnail scripts-info scripts-info gg-sub-menu";
+}
+
+/* Initialise grid areas */
+
+#gg-title {
+    grid-area: gg-title;
+}
+
+#code-thumbnail {
+    grid-area: code-thumbnail;
+    position: relative;
+}
+
+#gg-logo {
+    position: absolute;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    width: 30%;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+#gg-menu {
+    grid-area: gg-menu;
+}
+
+#gg-sub-menu {
+    grid-area: gg-sub-menu;
+}
+
+#scripts-info {
+    grid-area: scripts-info;
+}

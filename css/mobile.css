@@ -1,0 +1,249 @@
+/*** All pages ***/
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+nav li {
+    font-size: 1.2em;
+}
+
+nav li a {
+    padding: 0.5rem 0.8rem;
+}
+
+body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header, footer {
+    margin: 0 -1rem 1.5rem -1rem;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header h2 {
+    font-size: 0.8em;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+footer {
+    margin-bottom: 0;
+}
+
+/*** Home page ***/
+
+.home-section #title {
+    font-size: 2rem;
+}
+
+.home-section #subtitle {
+    font-size: 1rem;
+}
+
+.home-section #links {
+    justify-content: center;
+    gap: 4rem;
+}
+
+.home-section a img {
+    height: 2rem;
+}
+
+.home-section {
+    height: calc(90% - 3rem);
+}
+
+/*** About page ***/
+
+/* About section */
+
+/* Sections re-aligned to flexbox instead of grid */
+.about-section, .profile, .hobbies-section div, .contact-section article, .skill-list, .experiences, .blog {
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: none;
+}
+
+.profile {
+    padding: 0.5rem;
+}
+
+.profile figure {
+    margin: 0;
+}
+
+/* Education section */
+
+.education-section {
+    grid-template-areas:
+    "about about about about"
+    "education education education education"
+    "education education education education"
+    "qualifications qualifications qualifications qualifications";
+}
+
+.education ol li {
+    font-size: 0.8rem;
+}
+
+.education ol li:not(:first-child) {
+    margin-left: 0.5rem;
+}
+
+.education::after {
+    left: 5%;
+    right: 5%;
+}
+
+.education ol li::after {
+    border-left: 0.8rem solid transparent;
+    border-right: 0.8rem solid transparent;
+    border-top: 0.8rem solid white;
+}
+
+.qualifications {
+    margin: 0 0 1rem 0;
+}
+
+.qualifications p {
+    padding: 0.5rem 0.05rem 0.5rem 0.05rem;
+}
+
+/* Hobbies section */
+
+.hobbies-section li, .contact-section li {
+    font-size: 0.8rem;
+}
+
+.hobbies-section figure {
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.hobbies-section figcaption {
+    font-size: 0.8rem;
+}
+
+/* Contact section */
+
+.contact-section p, .contact-section ul {
+    margin: 0.5rem;
+    margin-bottom: 0;
+}
+
+/*** Skills and Experience page ***/
+
+/* Skills section */
+
+#languages-title, #apps-title, #other-title {
+    align-self: center;
+}
+
+/* Experience section */
+
+.experiences {
+    margin: 0;
+    padding: 0;
+    align-items: normal;
+}
+
+.experiences li {
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.experiences img {
+    height: 3rem;
+}
+
+.experiences li, .experiences span, .experiences p {
+    text-align: center;
+}
+
+/*** Projects page ***/
+
+/* Platformer game section */
+
+#platformer-game {
+    grid-template-areas:
+    "game-title game-title game-title game-title"
+    "game-info game-info game-info game-info"
+    "game-thumbnail game-thumbnail gameplay-image gameplay-image"
+    "game-link game-link gameplay-video gameplay-video";
+    grid-template-rows: auto;
+}
+
+#platformer-game ul, #gg-script ul {
+    font-size: 0.8rem;
+}
+
+#platformer-game figure, #gg-script figure {
+    margin: 0.5rem;
+}
+
+#platformer-game .subheading, #gg-script .subheading {
+    margin-bottom: 0;
+}
+
+#platformer-game hr, #gg-script hr {
+    width: 80%;
+}
+
+#game-link a {
+    font-size: 0.8rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    align-self: center;
+}
+
+/* Gameguardian script section */
+
+#gg-script {
+    grid-template-areas:
+    "gg-title gg-title gg-title gg-title"
+    "scripts-info scripts-info scripts-info scripts-info"
+    "code-thumbnail code-thumbnail gg-menu gg-menu"
+    "code-thumbnail code-thumbnail gg-sub-menu gg-sub-menu";
+    grid-template-rows: auto;
+}
+
+#gg-logo {
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+/*** Blog page ***/
+
+.blog-section #title {
+    font-size: 1.5rem;
+}
+
+.blog-section h4, .blog-section h2 {
+    font-size: 0.9rem;
+}
+
+.blog-section h4 {
+    text-align: left;
+}
+
+.blog-section h2 {
+    text-align: right;
+}
+
+/*** Forms pages ***/
+
+form {
+    margin: 1.5rem 1rem 1.5rem 1rem;
+}
+
+button {
+    margin-top: 0.5rem;
+}

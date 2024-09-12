@@ -1,0 +1,16 @@
+caption {
+    background-color: darkred;
+    color: white;
+    padding: 0.5rem;
+}
+
+th, tr, td, caption {
+    border: solid black 0.06rem;
+    text-align: center;
+    font-family: Tahoma;
+}
+
+caption, th {
+    font-weight: bold;
+    font-size: 1rem;
+}

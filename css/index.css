@@ -1,0 +1,61 @@
+@import url(base.css);
+
+/* Home page styling */
+
+.home-section {
+    font-family: "Inknut Antiqua", serif;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-template-areas: 
+    ". ."
+    "name name"
+    "subtitle subtitle"
+    "links links";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Defining grid areas */
+
+#title {
+    grid-area: name;
+    font-size: 2.5rem;
+}
+
+#subtitle {
+    grid-area: subtitle;
+    font-size: 1.5rem;
+}
+
+#links {
+    grid-area: links;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Image styling - embedded links to LinkedIn and GitHub */
+
+a img {
+    height: 3rem;
+    filter: invert(100%);
+    border: solid black 0.1rem;
+    border-radius: 0.3rem;
+}
+
+a img:hover {
+    background-image: linear-gradient(90deg, transparent, white, transparent);
+}
+
+/* Heading styles */
+
+#title h3, #subtitle h4 {
+    padding: 2rem;
+    padding-top: 0;
+    background-image: linear-gradient(90deg, #63a0e1, white, #63a0e1);
+    background-clip: text;
+    color: transparent;
+}

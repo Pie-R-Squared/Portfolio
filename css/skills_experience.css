@@ -1,0 +1,143 @@
+@import url(base.css);
+
+/* Allow for expanding/shrinking sections to accomodate content */
+section {
+    height: auto;
+}
+
+/* Heading styles */
+
+h4, label {
+    font-family: tahoma;
+}
+
+/* Skills section */
+
+.skills-section {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+    "skills-title skills-title skills-title skills-title skills-title"
+    ". . skills . ."
+    ". experience experience experience .";
+}
+
+.skills-section div {
+    grid-area: skills-title;
+}
+
+/* Skills grid */
+
+.skill-list {
+    grid-area: skills;
+    display: grid;
+    grid-template-areas:
+    "languages-title apps-title other-title"
+    "language-skills app-skills other-skills";
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+}
+
+/* Styling skill titles */
+
+#languages-title, #apps-title, #other-title {
+    align-self: flex-end;
+}
+
+#languages-title {
+    grid-area: languages-title;
+}
+
+#apps-title {
+    grid-area: apps-title;
+}
+
+#other-title {
+    grid-area: other-title;
+}
+
+/* Grid areas */
+
+#language-skills {
+    grid-area: language-skills;
+}
+
+#app-skills {
+    grid-area: app-skills;
+}
+
+#other-skills {
+    grid-area: other-skills;
+}
+
+/* Skills are aligned to the top left of progress bars */
+
+.skills-section ul {
+    list-style-type: none;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#skills, #experience, .subheading {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Progress bars */
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    margin: 0.5rem;
+    border-radius: 10em;
+}
+
+/* Right end of bar */
+progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+}
+
+/* Left end of bar */
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: linear-gradient(45deg, rgb(8, 8, 63), rgb(255, 255, 255));
+}
+
+/* For compatibility with other browsers */
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: linear-gradient(45deg, rgb(8, 8, 63), rgb(255, 255, 255));
+}
+
+/* Experience section */
+
+.experience-section {
+    grid-area: experience;
+    border: dotted white 0.2rem;
+    padding: 1rem;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-section img {
+    height: 4rem;
+}
+
+.experience-section h2 {
+    margin-bottom: 0;
+}
+
+.experience-section li {
+    margin-right: 2rem;
+}

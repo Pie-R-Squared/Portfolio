@@ -1,0 +1,142 @@
+@import url(base.css);
+
+/* Allow for expanding/shrinking sections to accomodate content */
+section {
+    height: auto;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "title title title title title"
+    "links posts posts posts posts"
+    "links posts posts posts posts"
+    "links posts posts posts posts"
+    "contact posts posts posts posts";
+    grid-gap: 1rem;
+}
+
+/* Define styling for grid section headings */
+
+#title, #links, #contact {
+    padding: 1rem;
+    text-align: center;
+    background-color: #B3CBE4;
+    border-radius: 0.4rem;
+    color: rgb(29, 51, 95);
+    box-shadow:
+    inset #019485 0 0 0 0.3rem,
+    inset #059d8e 0 0 0 0.06rem,
+    inset #0cab9b 0 0 0 0.6rem;
+    text-shadow: 0.2rem 0.2rem 0.1rem #bfecf7;
+}
+
+#title {
+    font-family: "Inknut Antiqua", serif;
+    grid-area: title;
+    font-size: 3.5rem;
+}
+
+#posts {
+    grid-area: posts;
+}
+
+#links {
+    grid-area: links;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+/* Posts section styling */
+
+form {
+    padding: 0.5rem;
+}
+
+select {
+    border: solid 0.1rem #B3CBE4;
+}
+
+input[type="submit"] {
+    background-color: #B3CBE4;
+    border-radius: 0.4rem;
+}
+
+#posts section {
+    background-color: rgb(39, 112, 117);
+    border: dotted white 0.1rem;
+    box-shadow: 0 0.3rem 0.5rem 0 black;
+}
+
+#posts p {
+    border: dashed white 0.1rem;
+    padding: 0.5rem;
+}
+
+#posts h4 {
+    margin: 0.5rem;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Aside elements (links, contact) styling */
+
+aside h4, aside a {
+    text-shadow: none;
+}
+
+aside a {
+    color: rgb(29, 51, 95);
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside hr {
+    background-color: rgb(29, 51, 95);
+}
+
+/* Figure styling */
+
+figure {
+    margin: 0;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+figcaption {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+/* Button styling */
+
+button {
+    background-color: #B3CBE4;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+button a {
+    color: rgb(29, 51, 95);
+}
+
+hr {
+    background-image: none;
+    background-color: white;
+}

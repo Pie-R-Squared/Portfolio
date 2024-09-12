@@ -1,0 +1,231 @@
+@import url(base.css);
+
+/* Allow for expanding/shrinking sections to accomodate content */
+section {
+    height: auto;
+}
+
+/* Styling ids of sections */
+
+#about, #hobbies, #contact, .subheading {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-section .profile, .contact-section article, .hobbies-section article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* about-section */
+
+.about-section {
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "about about about about"
+    "profile profile profile profile";
+}
+
+.about-section div {
+    grid-area: about;
+}
+
+.profile {
+    grid-area: profile;
+    padding: 2rem;
+}
+
+.profile p {
+    width: 80%;
+    margin: 1rem;
+}
+
+/* education-section */
+
+.education-section {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.25fr 1fr 1.75fr 2fr;
+    grid-template-areas:
+    "about about about about"
+    "education education education education"
+    "education education education education"
+    ". qualifications qualifications .";
+}
+
+.education {
+    grid-area: education;
+}
+
+/* Qualifications sub-section */
+
+.qualifications {
+    grid-area: qualifications;
+    margin: 1rem 3rem 1rem 3rem;
+    padding: 1rem;
+    border: solid black 0.1rem;
+    border-radius: 0.3rem;
+    background-color: #baab85;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "qualifications-title qualifications-title"
+    "gcse gcse-grades"
+    "alevels alevel-grades";
+}
+
+.qualifications p {
+    text-align: center;
+    background-color: white;
+    padding: 0.3rem;
+}
+
+#qualifications-title {
+    grid-area: qualifications-title;
+}
+
+#gcse {
+    grid-area: gcse;
+}
+
+#gcse-grades {
+    grid-area: gcse-grades;
+}
+
+#alevels {
+    grid-area: alevels;
+}
+
+#alevel-grades {
+    grid-area: alevel-grades;
+}
+
+/* Timeline */
+
+.education {
+    display: inline-block;
+    position: relative;
+}
+
+.education ol {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Education boxes */
+.education ol li {
+    background-color: #00292A;
+    border: solid #B3CBE4 0.06rem;
+    list-style-type: none;
+    width: 8rem;
+    min-height: 4rem;
+    padding: 1rem;
+    position: relative;
+    font-family: "Slabo 27px", serif;
+}
+
+.education ol li:not(:first-child) {
+    margin-left: 2rem;
+}
+
+/* Horizontal timeline */
+.education::after {
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    background-color: white;
+    top: 80%;
+    left: 20%;
+    right: 20%;
+}
+
+/* Arrows */
+.education ol li::after {
+    content: '';
+    position: absolute;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1rem solid white;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Figure styles */
+
+figcaption {
+    font-family: "PT Sans Caption", sans-serif;
+    color: grey;
+}
+
+figure img {
+    border: solid darkgray 2px;
+    width: 50%;
+}
+
+figure {
+    margin-left: 5rem;
+    margin-right: 0;
+}
+
+/* Hobbies-section */
+
+.hobbies-section div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "programming . reading"
+    "programming gaming reading"
+    ". gaming .";
+    align-items: start;
+}
+
+.hobbies-section figure {
+    margin: 0;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+video, .hobbies-section img {
+    width: 90%;
+    background-color: black;
+    border: solid black 0.5rem;
+}
+
+.hobbies-section figcaption {
+    padding: 0.5rem;
+    width: 90%;
+    background-color: black;
+    text-align: center;
+}
+
+#programming {
+    grid-area: programming;
+}
+
+#gaming {
+    grid-area: gaming;
+}
+
+#reading {
+    grid-area: reading;
+}
+
+/* Contact section */
+
+.contact-section {
+    height: 20%;
+}
+
+.contact-section li {
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,172 @@
+/* Main structure elements */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+section {
+    opacity: 0;
+}
+
+section.reveal {
+    animation: scale-down 2s;
+    animation-fill-mode: forwards;
+}
+
+section.hide {
+    animation: fade-out 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scale-down {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fixed background with parallax effect */
+
+.parallax {
+    background-image: url("../images/parallax.jpg");
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: #B3CBE4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aliceblue;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+}
+
+hr {
+    height: 0.1rem;
+    border: none;
+    background-image: linear-gradient(90deg, transparent, white, transparent);
+}
+
+ul {
+    font-family: "Slabo 27px", serif;
+}
+
+/* Heading and Paragraph styles */
+
+h1 {
+    font-family: "Dosis", sans-serif;
+    color: white;
+    font-size: 2.5em;
+    padding: 0.8rem;
+    padding-bottom: 0;
+}
+
+h2 {
+    color: white;
+    font-size: 1em;
+    padding: 0.8rem;
+    padding-top: 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-family: "Slabo 27px", serif;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Header and Footer styles to go around body */
+
+header, footer {
+    background-color: rgb(29, 51, 95);
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 -5rem 2rem -5rem;
+    color: white;
+}
+
+.footer {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding: 0.8rem;
+}
+
+#header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: solid white 0.1rem;
+    border-radius: 0.4rem;
+}
+
+/* Styling nav-bar descendants */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(39, 112, 117);
+}
+
+nav li {
+    float: left;
+    font-size: 1.7em;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.875rem 1rem;
+    color: #B3CBE4;
+}
+
+/* Styling sections for consistent formatting */
+
+section {
+    background-color: rgb(37, 60, 108, 0.8);
+    color: white;
+    height: 90%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/* In case content doesn't occupy entire page, footer is sticky to ensure it stays at the bottom */
+
+footer {
+    position: sticky;
+    top: 100%;
+    margin-bottom: 0;
+}
