@@ -7,16 +7,16 @@
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#set-up">Set Up</a>
       <ul>
-        <li><a href="#cloning-repository">Clone Repository</a></li>
-        <li><a href="#installation-of-zip">Zip Installation</a></li>
+        <li><a href="#clone-repository">Clone Repository</a></li>
+        <li><a href="#zip-installation">Zip Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage-guidelines">Usage Guidelines</a></li>
       <ul>
-        <li><a href="#about">About Page</a></li>
-        <li><a href="#skills">Skills and Experience Page</a></li>
-        <li><a href="#projects">Projects Page</a></li>
-        <li><a href="#blog">Blog Page</a></li>
+        <li><a href="#about-page">About Page</a></li>
+        <li><a href="#skills-and-experience-page">Skills and Experience Page</a></li>
+        <li><a href="#projects-page">Projects Page</a></li>
+        <li><a href="#blog-page">Blog Page</a></li>
         <li><a href="#accessibility">Accessibility</a></li>
       </ul>
     <li><a href="#contact">Contact</a></li>
