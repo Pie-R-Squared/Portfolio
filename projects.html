@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=PT+Sans+Caption:wght@400;700&family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="parallax">
+    <header>
+        <h1>Aneeka Ahmad</h1>
+        <h2>Student at Queen Mary's</h2>
+
+        <!-- navigation-bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills_experience.html">Skills/Experience</a></li>
+                <li><a href="my_CV.html">My CV</a></li>
+                <li><a href="blog.php">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects section -->
+    <section class="no-hide-effect">
+        <div>
+            <h3 id="projects">Projects</h3>
+            <hr>
+        </div>
+
+        <!-- Platformer game project -->
+        <article id="platformer-game">
+            <h2 class="subheading" id="game-title">
+                Platformer Game
+                <hr>
+            </h2>
+            <div id="game-info">
+                <p>
+                    During my A-levels I developed a side-scrolling platformer game written in Python, making extensive use of the pygame library.
+                    The project took about a year and a half to complete and detailed documentation (consisting of 187 pages) was made alongside it.
+                    <br><br>
+                    The main features of the game include:
+                </p>
+                <ul>
+                    <li>Interactive main menu</li>
+                    <li>Controls screen</li>
+                    <li>Character select screen</li>
+                    <li>Main game window</li>
+                    <li>A high-score system, where the highest score is saved to an external file and displayed on the gameover screen</li>
+                    <li>Confirmation dialog when attempting to press esc during gameplay.</li>
+                </ul>
+            </div>
+            <figure id="game-thumbnail">
+                <img src="images/game-title-screen.png">
+                <figcaption>Title screen</figcaption>
+            </figure>
+            <figure id="gameplay-image">
+                <img src="images/gameplay-screen.png">
+                <figcaption>Gameplay</figcaption>
+            </figure>
+            <figure id="gameplay-video">
+                <video controls>
+                    <source src="videos/game_project.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Gameplay video</figcaption>
+            </figure>
+            <div id="game-link">
+                <a href="https://www.youtube.com/playlist?list=PL6FlFBaKBN1T3cZ01E-KmkchrJov7gBCN">See how I developed this &#8594</a>
+                <a href="https://github.com/Pie-R-Squared/Platformer-Game">Link to code &#8594</a>
+            </div>
+        </article>
+    </section>
+    
+    <!-- GameGuardian script project -->
+    <section>
+        <article id="gg-script">
+            <h2 class="subheading" id="gg-title">
+                GameGuardian Script
+                <hr>
+            </h2>
+            <figure id="code-thumbnail">
+                <a href="https://github.com/Pie-R-Squared/Scripts/blob/main/Spawn%26Sizev2.lua">
+                    <img src="images/code_thumbnail.png">
+                    <figcaption>Animal spawning and player resizing script &#8594</figcaption>
+                </a>
+                <figure id="gg-logo">
+                    <img src="images/gg_logo.png">
+                </figure>
+            </figure>
+            <figure id="gg-menu">
+                <img src="images/gg_menu.png">
+                <figcaption>Menu layout</figcaption>
+            </figure>
+            <figure id="gg-sub-menu">
+                <img src="images/gg_menu_2.png">
+                <figcaption>Sub-menu layout</figcaption>
+            </figure>
+            <div id="scripts-info">
+                <p>
+                    GameGuardian is an android game hacking application, requiring root access to utilise. More specifically, it's
+                    a memory editor, capable of editing values in RAM of running processes.
+                    <br><br>
+                    The scripts are written in lua and executed inside GameGuardian with the app running in the background. This script
+                    that I've written is a simple menu which includes a sub-menu, with features such as spawning animals and resizing
+                    the player character in real-time. Developing this script took a few days and was an enjoyable experience to test
+                    and build upon. Similar more complicated scripts can also be made which use offset addressing instead of searching
+                    and refining values.
+                    <br><br>
+                    This particular script is accessible on my GitHub page, which is linked beneath the code thumbnail. Currently, only
+                    two versions have been created as the features are quite basic, with limited functionality on it's own; I may later
+                    incorporate it into a larger menu.
+                    <br><br>
+                    Other features I have implemented in newer scripts include:
+                </p>
+                <ul>
+                    <li>Cloning the player</li>
+                    <li>Blank player name</li>
+                    <li>Immortality</li>
+                    <li>Infinity points</li>
+                    <li>Boss spawn</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    
+    <footer>
+        <p class="footer"><i>Copyright &#169 2024 | Aneeka Ahmad</i></p>
+    </footer>
+</body>
+</html>
