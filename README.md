@@ -57,17 +57,19 @@ Portfolio website made using HTML, CSS, JavaScript and PHP.
 ## Zip Installation
 
 1. Download the zip file from the repository
-2. Download size: approx. 40MB
-3. Go to the Downloads folder and extract the file to C:\xampp\htdocs
-4. Open Xampp/MAMP Control Panel and enable the Apache and SQL servers
-![Xampp](assets/xampp.png)
-5. Go into your browser and type in https://localhost/aahmad-phase2/
-6. Navigate around the website as shown below
+  - Download size: approx. 40MB
+2. Go to the Downloads folder and extract the file to C:\xampp\htdocs
+3. Open Xampp/MAMP Control Panel and start the Apache and SQL servers
+<img src="assets/xampp.png" alt="xampp" width="300"/>
+4. Go into your browser and type in https://localhost/aahmad-phase2/
+5. Navigate around the website as shown below
 
 <!-- USAGE GUIDE VIDEO -->
 ## Usage Guidelines
+
 This video shows how to navigate around the website.
-![Usage Video](assets/portfolio_guide.mp4)
+
+<video src="assets/portfolio_guide.mp4" width="300"/>
 
 ## About Page
 
