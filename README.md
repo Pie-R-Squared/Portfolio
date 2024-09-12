@@ -20,4 +20,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Portfolio website made using HTML, CSS, JS and PHP
+Portfolio website made using HTML, CSS, JavaScript and PHP.
+
+
