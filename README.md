@@ -68,7 +68,9 @@ Portfolio website made using HTML, CSS, JavaScript and PHP.
 
 This video shows how to navigate around the website.
 
-[![Watch Guide](https://raw.githubusercontent.com/Pie-R-Squared/Portfolio/main/assets/about-page.png)](https://raw.githubusercontent.com/Pie-R-Squared/Portfolio/main/assets/portfolio_guide.mp4)
+<figure class="video_container">
+  <iframe src="assets/portfolio_guide.mp4" frameborder="0" allowfullscreen="true"></iframe>
+</figure>
 
 ## About Page
 
