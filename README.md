@@ -68,7 +68,7 @@ Portfolio website made using HTML, CSS, JavaScript and PHP.
 
 This video shows how to navigate around the website.
 
-![Video Guide](https://youtu.be/vu_qohwhtEQ)
+[![Video Guide](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2Fvu_qohwhtEQ)](https://youtu.be/vu_qohwhtEQ)
 
 ## About Page
 
