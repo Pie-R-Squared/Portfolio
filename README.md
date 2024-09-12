@@ -60,7 +60,7 @@ Portfolio website made using HTML, CSS, JavaScript and PHP.
 2. Go to the Downloads folder and extract the file to C:\xampp\htdocs
 3. Open Xampp/MAMP Control Panel and start the Apache and SQL servers
 <img src="assets/xampp.png" alt="xampp" width="500"/>
-4. Go into your browser and type in https://localhost/aahmad-phase2/
+4. Go into your browser and type in https://localhost/aahmad-phase2/<br>
 5. Navigate around the website as shown below
 
 <!-- USAGE GUIDE VIDEO -->
